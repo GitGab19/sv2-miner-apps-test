@@ -3,7 +3,13 @@ resolver = "2"
 
 members = [
     "jd-client",
-    "translator"
+    "translator",
+    "test-utils/mining-device",
+    "test-utils/mining-device-sv1"
+]
+
+exclude = [
+    "integration-test-framework"
 ]
 
 [profile.dev]
