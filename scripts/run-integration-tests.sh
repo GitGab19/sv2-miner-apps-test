@@ -41,11 +41,7 @@ echo "✅ Updated Cargo.toml to use local dependencies"
 echo "🏃 Running integration tests..."
 
 # Run the integration tests
-cargo test --verbose
+cargo test --features sv1 --verbose
 
-echo "🧹 Cleaning up..."
-# Restore original Cargo.toml
-mv Cargo.toml.backup Cargo.toml
 cd "$REPO_ROOT"
-rm -rf "$INTEGRATION_DIR"
 echo "✅ Integration tests completed!"
