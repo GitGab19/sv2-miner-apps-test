@@ -267,6 +267,7 @@ impl DownstreamMiningNode {
         self_mutex: &Arc<Mutex<Self>>,
         setup_connection_success: SetupConnectionSuccess,
     ) {
+        return;
         // Ensure the downstream is in a paired state before starting message processing.
         if self_mutex
             .safe_lock(|self_| self_.status.is_paired())
