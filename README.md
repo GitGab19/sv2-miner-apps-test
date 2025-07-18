@@ -1,4 +1,4 @@
-# SV2 Miner Apps Test Repository
+# SV2 Miner Apps Test Repository - FORK
 
 This is a test repository for SV2 miner applications.
 
